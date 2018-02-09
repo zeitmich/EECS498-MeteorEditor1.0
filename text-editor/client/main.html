@@ -1,0 +1,36 @@
+<head>
+	<title>EECS498 MeteorEditor</title>
+</head>
+
+<body>
+	<h1>Welcome to MeteorEditor 1.0!</h1>
+	{{> editor}}
+</body>
+
+<template name="editor">
+	<p>
+		<button class="bold">Bold</button>
+		<button class="italic">Italic</button>
+		<button class="underline">Underline</button>
+	</p>
+	<p>
+		<button class="select-color black">A</button>
+		<button class="select-color red">A</button>
+		<button class="select-color green">A</button>
+		<button class="select-color blue">A</button>
+		<p>Current status: {{getStyle}}</p>
+	</p>
+	<br><br>
+	<p>
+		{{#each getText}}
+			<span class="{{style}}">{{word}}</span>
+		{{/each}}
+	</p>
+	<form class="add-text">
+		<input type="text" name="input" />
+	</form>
+	<p>
+		<button class="clear">Clear All Text</button>
+	</p>
+</template>
+

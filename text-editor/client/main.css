@@ -1,0 +1,34 @@
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.select-color {
+	font-size: 30px;
+	font-weight: bold;
+	background: none;
+}
+
+.black {
+	color: black;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+.blue {
+	color: blue;
+}
+
